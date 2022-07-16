@@ -1,0 +1,292 @@
+/*reset css*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* START WEBSITE */
+
+body {
+	margin:50px;
+ font-family:"coolvetica";
+ background-color: #ABB2B9
+}
+
+a {text-decoration: none;}
+
+.container {
+	display: flex;
+	background-color:#ABB2B9;
+	height: 65px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	z-index: 9999;
+	top:0;
+}
+
+img {
+	width: 130px;
+}
+
+.menu-bar {
+	padding: 20px 0;
+	display: flex;
+	padding-right: 75px;
+
+}
+
+	.menu-bar a {
+		flex: auto;
+		text-decoration: none ;
+		color: black;
+		margin: 0;
+		padding: 10px;
+			}
+
+
+/*introduce*/
+
+.introduce {
+	display: flex;
+	width: 1150px;
+	height: 540px;
+	margin: 65px auto;
+	background-image: url("bg.png");
+	background-size: 1150px 540px ;
+}
+.profile {
+	width: 450px;
+	height: 450px;
+	margin:auto;
+	text-align: center;
+	display: flex;
+
+}
+
+.profile span {
+	margin: auto;
+}
+
+img {
+	border-radius: 50%;
+	padding-left: 0;
+}
+
+.profile span h1 {
+	font-size: 30px;
+	color: white;
+	margin: 5px;
+}
+.profile span p {
+	font-size: 13px;
+	color: white;
+	margin : 5px;
+}
+
+.socmed img {
+	width: 25px;
+	margin: 15px 10px;
+}
+
+
+/* ABOUT ME */
+
+.box {
+	display: flex;
+	width: 1150px;
+	height: 390px;
+	margin:  30px auto;
+	text-align: center;
+	background-color: #F0F3F4 ;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.me {display: flex;
+	margin: auto; }
+
+.me h2 {
+	font-size: 38px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.me p {
+	font-size: 25px;
+	text-align: center;
+	margin:auto;
+	display: flex;
+	width: 350px;
+	justify-content: center;
+}
+
+.me span {
+	margin: 10px auto;
+}
+
+
+/* PROFFESINAL SKILLS */
+.skill {
+	margin: 30px auto;
+	width: 1150px;
+	display: grid;
+	background-color: #F0F3F4;
+	grid-template-areas: 
+	 'title title'
+	 'skills level';
+	 grid-template-columns: 50% 50%;
+	 grid-template-rows: 60px 260px;
+	 box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+
+}
+
+.title-skills
+{  grid-area: title;
+ }
+
+.title-skill h2 {
+	font-size: 35px;
+	padding: 20px;
+}
+
+.skills-box
+{	grid-area: skills;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	padding: 30px;
+}
+.skills-box li {
+	font-size: 20px;
+	text-align: center;
+	margin: 5px auto;
+}
+
+.level {
+	grid-area: level;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	padding:30px;
+}
+
+.level li {
+	font-size: 20px;
+	text-align: center;
+	margin: 5px auto;
+}
+
+/*educaton */
+
+.education-box
+{
+	margin: 30px auto;
+	width: 1150px;
+	display: grid;
+	grid-template-areas: 
+	 'title'
+	 'education';
+	 grid-template-columns: 100%;
+	 grid-template-rows: 60px 100px;
+	 background-color: #F0F3F4;
+	 box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.education-list {
+	grid-area: education;
+	justify-content: start;
+	align-content: center;
+}
+
+.education-list li {
+	font-size: 20px;
+	margin: 15px;
+	padding-left: 50px;
+}
+
+/* CONTACT ME BOX */
+
+/* contact me */
+
+.contactme-box {
+	display: grid;
+	width: 300px;
+	background-color: #F0F3F4;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+	border-radius: 40px;
+	height: 300px;
+	justify-content: center;
+	align-content: center;
+	margin: 150px auto;
+	grid-template-columns: 100%;
+	grid-template-rows:60px auto;
+	grid-template-areas: 
+	'contact me'
+	'form';
+}
+
+.contactme {
+	grid-area: contact me;
+	margin: 5px auto;
+	padding: 5px auto;
+}
+.contactme h2 {
+	font-size: 24px;
+	padding:center;
+	text-align: center;
+}
+
+
+.form-contact span h2,input{
+	grid-area: form;
+	margin-left: 20px;
+	margin-top: 2px;
+}
+
+.form-contact button {
+	margin-left: 19px;
+}
